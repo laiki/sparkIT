@@ -4,7 +4,7 @@ FROM ubuntu:latest
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-        openjdk-11-jdk openssh-server
+        openjdk-11-jdk openssh-server nano
 
 # hduser creation
 RUN addgroup hadoop                 && \
